@@ -1,13 +1,104 @@
+:root{
+  --dark-grey: #333333;
+ --light-grey: #555;
+ --border-grey: #CFCFCF;
+}
+*{
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+body{
+  background: skyblue;
+  height: 500px;
+}
 .menu{
-  background-color: #E0E0E0;
-  border : 1px  0 1px 0 solid #CFCFCF;
-  padding : 20px;
+  margin: 0 auto;
+  width : 90rem;
+  background: #F7F6F5;
+  border-top : 1px solid var(--dark-grey);
+  padding : 5px;
+}
+.menu_main{
+  width:90%;
+  margin:0 auto;
 }
 .menu_item{
-  font-weight: 800;
-  font-family: "Roboto";
-  padding:  0 20px;
+  padding:  .5rem 2rem;
   display: inline-block;
+  border-bottom: 3px solid #CFCFCF;
+  margin:2px;
+}
+.menu_item:hover{
+  background: white;
+  border: 0 1rem solid black;
+  margin : 0 3px;
+}
+.menu_item--current .menu__item__link{
+  color: black;
+  border-bottom: 2px solid black;
+  padding-bottom: 1rem;
+}
+.menu__item__link{
+  text-decoration: none;
+  font-family:"Roboto";
   font-size: 20px;
-  color : #292929;
+  color : var(light-grey);
+  font-weight: 800;
+}
+.menu__item__link:hover{
+  text-decoration: underline;
+  color: blue;
+}
+.menu__sub{
+  height: 15rem;
+  background-color: white;
+}
+.menu__sub__categories{
+  vertical-align: top;
+  display: inline-block;
+  width: calc(40% - 1rem - 2px);
+  padding: 1rem;
+  margin-left: 1.3rem;
+}
+.menu_sub_visual {
+  display: inline-block;
+  width: calc(60% - 2px);
+  padding: 0.5rem;
+  height: 100%;
+}
+
+.menu_sub_visual_img {
+  width: 30%;
+  height: 30%;
+}
+
+.menu_sub_categories_category {
+  display: inline-block;
+  width: calc(50% - 2px);
+  vertical-align: top;
+}
+
+.menu_sub_categories_header {
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border-grey);
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menu_sub_categories_items {
+  list-style: none;
+  padding: 0;
+  line-height: 1.6rem;
+  color: var(--light-grey);
+}
+
+.menu_sub_categories_item_link {
+  text-decoration: none;
+  color: var(--light-grey);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.menu_sub_categories_item_link:hover {
+  text-decoration: underline;
 }
