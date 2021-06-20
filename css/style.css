@@ -1,0 +1,13 @@
+.menu{
+  background-color: #E0E0E0;
+  border : 1px  0 1px 0 solid #CFCFCF;
+  padding : 20px;
+}
+.menu_item{
+  font-weight: 800;
+  font-family: "Roboto";
+  padding:  0 20px;
+  display: inline-block;
+  font-size: 20px;
+  color : #292929;
+}
